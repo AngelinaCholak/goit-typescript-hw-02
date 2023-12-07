@@ -14,8 +14,7 @@
 //   console.log(data);
 // });
 
-// export {};
-function getPromise<T extends (string | number)>() {
+function getPromise(): Promise<(string | number)[]> {
   return new Promise((resolve) => {
     resolve(["Text", 50]);
   });
